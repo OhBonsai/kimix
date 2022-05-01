@@ -13,8 +13,7 @@ en:
   items:
     - icon: fa-business-time
       title: We provide high quality products
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
+      content: We provide
     - icon: fa-calculator
       title: "We are professional "
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
@@ -24,8 +23,8 @@ en:
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
 zh:
-  title: About <span>Us</span>
-  backgroundTitle: Learn more
+  title: 关于 <span>我们</span>
+  backgroundTitle: 你好啊
   portText: Learn more about us
   items:
     - icon: fa-business-time
