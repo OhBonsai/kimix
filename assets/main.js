@@ -104,9 +104,9 @@ function initNav() {
     themeEle.onclick = function () {
       const html = document.querySelector("html");
       const htmlThemeClass = html.getAttribute("class");
-      const val = htmlThemeClass === "light-mode" ? "" : "light-mode";
-      html.setAttribute("class", val);
-      localStorage.setItem("theme", val);
+      // const val = htmlThemeClass === "light-mode" ? "" : "light-mode";
+      html.setAttribute("class", "light-mode");
+      // localStorage.setItem("theme", val);
     };
   }
 
