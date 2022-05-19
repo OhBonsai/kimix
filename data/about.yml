@@ -1,41 +1,28 @@
 en:
   title: About <span>Us</span>
-  backgroundTitle: Kimix Chemical was founded in 2008 in Hangzhou China, as a
-    member of Vink Chemical GmbH & Co. KG. German based Vink Chemicals is a
-    specialist for biocides and offers genuine all-in-one service, providing
-    customers not only with the biocide formulation, but also research and
-    development, raw material acquisition, and regulatory support. To provide
-    professional service on the microbiological preservative for Asian market,
-    one more Chinese branch was established with laboratory in Shanghai. In
-    early 2019, the new member Vink Chemicals Canada Ltd. was established to
-    explore American markets.
-  portText: Learn more about us
+  backgroundTitle: About Us
+  portText: Kimix Chemical Co., Ltd. is a professional chemicals supplier, devoted to providing high quality products, efficient service, and driving value improvement for clients all over the world.
   items:
     - icon: fa-business-time
-      title: We provide high quality products
-      content: We provide
+      title: We supply high quality chemicals
+      content: 
     - icon: fa-calculator
-      title: "We are professional "
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
+      title: We provide multi-directional solutions
+      content: 
     - icon: fa-bullseye
-      title: We provide products to world wide customers
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
+      title: Our net work
+      content: 
 zh:
   title: 关于 <span>我们</span>
-  backgroundTitle: 你好啊
-  portText: Learn more about us
+  backgroundTitle: 关于我们
+  portText: 凯美斯化工有限公司是一家专业的化工原料和产品供应商，致力于向客户提供优质的产品和服务，为客户创造长期的价值
   items:
     - icon: fa-business-time
-      title: 我们贼有创意
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
+      title: We supply high quality chemicals
+      content: 
     - icon: fa-calculator
-      title: We're Professional
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
+      title: We provide multi-directional solutions
+      content: 
     - icon: fa-bullseye
-      title: We're Genius
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
+      title: Our net work
+      content: 

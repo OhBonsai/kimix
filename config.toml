@@ -20,7 +20,6 @@ contentDir = "content/chinese"
 weight = 2
 mark = "中"
 
-
 [taxonomies]
   category= "categories"
   scene = "scenes"

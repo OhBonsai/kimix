@@ -1,14 +1,4 @@
-<!-- {{ $data := index site.Data site.Language.Lang}} -->
 {{ $data := index site.Data.products site.Language.Lang }}
-
-{{ $categories := index $data "categories"}}
-{{ $cMapping := dict "" ""}}
-{{ range $categories }}
-{{ $cMapping = merge $cMapping (dict .cSlug .)}}
-{{ end}}
-
-{{ $existCategories :=  site.Taxonomies.categories }}
-
 
 <section class="section sec3 content-sec" id="product">
 
@@ -26,19 +16,16 @@
 
     <div class="categories">
 
-        {{range $curCategorySlug, $curCategoryVar := $existCategories}}
-        {{ $curCategoryCfg := index $cMapping $curCategorySlug}}
-        {{ $firstPage := index $curCategoryVar 0}}
-
+        {{range $data.categories}}
         <div class="category">
-            <div class="image"><img src="{{$curCategoryCfg.coverImage}}" alt="">
-                <h3>{{$curCategoryCfg.name}}</h3>
+            <div class="image"><img src="{{.coverImage}}" alt="">
+                <h3>{{.name}}</h3>
             </div>
             <div class="hover-items">
-                <div class="show-more" onclick="handleHeaderSubMenuClick(event, '{{  $firstPage.RelPermalink  }}')"> 
-                    View More
+                <div class="show-more" onclick="handleHeaderSubMenuClick(event, '')">
+                    {{$data.btnText}}
                 </div>
-                <p>{{$curCategoryCfg.description}}</p>
+                <!-- <p>{{.description}}</p> -->
             </div>
         </div>
         {{ end }}
