@@ -1,23 +1,6 @@
-{{ $data := index site.Data.header site.Language.Lang }}
 {{ $glossary := index site.Data.glossary site.Language.Lang }}
-
-{{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
-{{ $existScenes :=  site.Taxonomies.scenes }}
-{{ $sMapping := dict "" ""}}
-{{ range $scenes }}
-{{ $sMapping = merge $sMapping (dict .cSlug .)}}
-{{ end}}
-
-
-{{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
-{{ $existCategories :=  site.Taxonomies.categories }}
-{{ $cMapping := dict "" ""}}
-{{ range $categories }}
-    {{ $cMapping = merge $cMapping (dict .cSlug .)}}
-{{ end}}
-
-
-
+{{ $product := index site.Data.product site.Language.Lang }}
+{{ $application := index site.Data.application site.Language.Lang }}
 
 <div class="header-bar">
     <div class="logo">
@@ -32,21 +15,21 @@
                 <span>{{$glossary.product}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    {{range $cSlug, $c := $existCategories}}
-                    {{$curCategory := index $cMapping $cSlug }}
-                    <li onclick="handleHeaderSubMenuClick(event, '{{ (index $c 0).RelPermalink }}')">{{ $curCategory.name }}</li>
+                    {{range $product.categories}}
+                    <li onclick="handleHeaderSubMenuClick(event, '')">
+                        {{ .name }}
+                    </li>
                     {{ end }}
                 </ul>
             </a>
-            
+
             <a class="item" href="/#solution" data-id="solution">
                 <span>{{$glossary.solution}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    {{range $sSlug, $s := $existScenes}}
-                    <li onclick="location.href='{{ (index $s 0).RelPermalink }}'">
-                        {{$curScene := index $sMapping $sSlug }}
-                        {{ $curScene.name }}
+                    {{range $application.categories}}
+                    <li onclick="handleHeaderSubMenuClick(event, '')">
+                        {{ .name }}
                     </li>
                     {{ end }}
                 </ul>

@@ -1,0 +1,26 @@
+en:
+  title: <span>Application</span> By Industry
+  backgroundTitle: Application By Industry
+  portText: "Here are our industry solutions that have helped many customers"
+  categories:
+    - coverImage: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-oq2vsW5QzZX3Bwq_D9gqKkIR42jEHz2Iw&usqp=CAU
+      name: construction
+      cSlug: s1
+      description: Cellulose ethers comprise methylcellulose
+    - coverImage: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1AjuDLTXmKu9Gjw0PSIvlEXAQ45XaV_W8g&usqp=CAU
+      name: food
+      cSlug: s2
+      description: Cellulose ethers comprise methylcellulose
+    - coverImage: https://is4-ssl.mzstatic.com/image/thumb/Purple115/v4/f2/29/cd/f229cd5e-c9be-048c-73fd-4af6a1b0dc33/source/256x256bb.jpg
+      name: oil
+      cSlug: s3
+      description: Cellulose ethers comprise methylcellulose,
+    - coverImage: /media/scene1.jpg
+      name: pill
+      cSlug: s4
+      description: Cellulose ethers comprise methylcellulose
+zh:
+  title: <span>产品</span>应用
+  backgroundTitle: 产品应用
+  portText: "以下是我们帮助过许多客户的行业解决方案"
+  categories:

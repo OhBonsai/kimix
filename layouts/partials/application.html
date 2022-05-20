@@ -1,0 +1,32 @@
+{{ $data := index site.Data.application site.Language.Lang }}
+
+<section class="section sec4 content-sec" id="solution">
+    <div class="main-title">
+        <h2> {{ $data.title | safeHTML }}
+            <span class="bg-text"> {{ $data.backgroundTitle }}</span>
+        </h2>
+        <div class="border"></div>
+    </div>
+
+    <p class="sub-title">
+        {{ $data.portText }}
+    </p>
+
+    <div class="scenes-box">
+        {{range $data.categories}}
+
+        <div class="item">
+            <div class="img">
+                <img src="{{.coverImage}}">
+            </div>
+
+            <div class="text">
+                <h3>{{.name}}</h3>
+                <p>{{.description}}</p>
+            </div>
+        </div>
+        {{end}}
+    </div>
+
+
+</section>
