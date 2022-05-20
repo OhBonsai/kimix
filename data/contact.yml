@@ -2,25 +2,31 @@ en:
   title: <span>Contact</span> Us
   backgroundTitle: Contact
   subtitle: Contact Me HERE
-  detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
-    provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis
-    asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
-    adipisci.
+  detail: Kimix Chemical Company Limited
   location: Hangzhou, China
   email: sales@kimix.com.cn
   fax: +86 571 8839 0023
-  phone: "+86 571 8839 2710 "
+  phone: +86 571 8839 2710
   languages: English,Chinese,Spanish
+  plName: Please input Your Name
+  plEmail: Please input Your Mail
+  plPhone: Please input Your Phone
+  plContent: Please input some content
+  btnText: Submit
+  btnText2: Send Mail
 zh:
-  title: <span>Contact</span> Us
-  backgroundTitle: Contact
-  subtitle: Contact Me HERE
-  detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
-    provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis
-    asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
-    adipisci.
-  location: Hangzhou, China
+  title: <span>联系</span> 我们
+  backgroundTitle: 联系我们
+  subtitle: 联系我们的方式
+  detail: Kimix化工有限公司
+  location: 中国杭州
   email: sales@kimix.com.cn
   fax: +86 571 8839 0023
-  phone: "+86 571 8839 2710 "
-  languages: English,Chinese,Spanish
+  phone: +86 571 8839 2710
+  languages: 英语,中文,西班牙语
+  plName: 请输入名称
+  plEmail: 请输入邮件
+  plPhone: 请输入手机
+  plContent: 请输入留言内容
+  btnText: 提交
+  btnText2: 发送邮件

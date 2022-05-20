@@ -1,8 +1,8 @@
 en:
   title: Our <span>News</span>
-  backgroundTitle: News
+  backgroundTitle: Our News
   portText: The latest news about us
 zh:
-  title: Our <span>News</span>
-  backgroundTitle: News
-  portText: The latest news about us
+  title: 最新 <span>动态</span>
+  backgroundTitle: 最新动态
+  portText: 关于我们的最新消息
