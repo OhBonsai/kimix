@@ -1,69 +1,52 @@
 en:
   title: Our <span>Products</span>
-  backgroundTitle: Products
+  backgroundTitle: Our Products
   portText: Kimix provides our customers high quality materials
   categories:
-    - coverImage: /static/media/cellulose-ethers-hec.jpg
+    - coverImage: /media/category1.jpg
       cSlug: c1
       name: Cellulose ethers
-      description: Cellulose ethers comprise methylcellulose, ethylcellulose,
-        hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
+      description: 1
+    - coverImage: /media/category2.jpg
+      cSlug: c2
+      name: Iron oxide pigment
+      description: 2
     - coverImage: /media/category3.jpg
       cSlug: c3
-      name: Iron oxide pigment
-      description: Kimix Titanium Dioxide covers both Rutile and Anatase types. With
-        year's development, it enjoys a good reputation in worldwide market for
-        the consistent quality, good whiteness, strong hiding power and reducing
-        power
+      name: Titanium dioxide
+      description: 3
     - coverImage: /media/category4.jpg
       cSlug: c4
       name: Re-dispersible polymer powder
-      description: Kimpolyer re-dispersible polymer powders is spray dried
-        re-dispersible emulsion power, designed for the construction industry to
-        enhance the properties of dry mortar blends, able to re-dispersible in
-        water and  react with hydrate product of cement/gypsum and stuffing,
-        form composite membrane with good mechanics intensity
+      description: 4
     - coverImage: /media/category5.jpg
       cSlug: c5
-      name: "Others "
-      description: Kimresin C9 is aromatic hydrocarbon resin produced by the remaining
-        (C9 fraction) of petroleum cracking, through catalyzed polymerization.
-        It has the characteristics of low acid value
-    - name: Titanium dioxide
-      cSlug: c2
-      description: "1111"
-      coverImage: /static/media/titanium-dioxide.jpg
+      name: Other paints & construction additives
+      description: 5
+  btnText: View More
 zh:
-  title: 我们的 <span>产品</span>
-  backgroundTitle: 产品
-  portText: Here is some of our products that we've provided in various country
+  title: 产品 <span>介绍</span>
+  backgroundTitle: 产品介绍
+  portText: Kimix为客户提供高品质的材料
   categories:
     - coverImage: /media/category1.jpg
       cSlug: c1
       name: 纤维素醚
-      description: Cellulose ethers comprise methylcellulose, ethylcellulose,
-        hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
+      description: 1
     - coverImage: /media/category2.jpg
       cSlug: c2
-      name: 钛白粉
-      description: Kimpigment serials cover synthetic iron oxide and chrome oxide with
-        a wide range of color shade, and enjoy a good reputation due to the good
-        opacity
+      name: 氧化铁颜料
+      description: 2
     - coverImage: /media/category3.jpg
       cSlug: c3
-      name: 氧化铁颜料
-      description: Kimix Titanium Dioxide covers both Rutile and Anatase types. With
-        year's development, it enjoys a good reputation in worldwide market for
-        the consistent quality, good whiteness, strong hiding power and reducing
-        power
+      name: 钛白粉
+      description: 3
     - coverImage: /media/category4.jpg
       cSlug: c4
-      name: 可再分散乳胶粉
-      description: Kimpolyer re-dispersible polymer powders is spray dried
-        re-dispersible emulsion power, designed for the construction industry to
-        enhance the properties of dry mortar blends, able to re-dispersible in
-        water and  react with hydrate product of cement/gypsum and stuffing,
-        form composite membrane with good mechanics intensity
-    - coverImage: /media/category4.jpg
-      name: 其他建筑、涂料助剂
+      name: 可分散乳胶粉
+      description: 4
+    - coverImage: /media/category5.jpg
       cSlug: c5
+      name: 其他建筑 & 涂料添加剂
+      description: 5
+  btnText: 查看更多

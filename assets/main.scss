@@ -26,7 +26,6 @@
       }
     }
 
-    .theme,
     .lang,
     .menu {
       box-shadow: none;
@@ -154,23 +153,6 @@
     }
   }
 
-  .theme {
-    cursor: pointer;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.23);
-    width: 1.8rem;
-    height: 1.8rem;
-    text-align: center;
-    line-height: 1.8rem;
-    border-radius: 2rem;
-    background-color: var(--color-white);
-    color: var(--color-primary);
-    font-size: 0.8rem;
-    &:hover {
-      color: var(--color-primary);
-      background-color: var(--color-secondary);
-    }
-  }
-
   .lang,
   .menu {
     margin-left: 0.5rem;
@@ -204,7 +186,6 @@
       }
     }
 
-    .theme,
     .lang,
     .menu {
       box-shadow: none;
@@ -243,12 +224,7 @@
     .image {
       width: 68%;
       height: auto;
-      // transform: translateX(-10%);
       transition: all 0.2s ease-in-out;
-
-      &:hover {
-        filter: grayscale(100%);
-      }
     }
   }
 

@@ -6,22 +6,18 @@ en:
     - coverImage: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-oq2vsW5QzZX3Bwq_D9gqKkIR42jEHz2Iw&usqp=CAU
       name: construction
       cSlug: s1
-      icon: fa-person-digging
       description: Cellulose ethers comprise methylcellulose
     - coverImage: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1AjuDLTXmKu9Gjw0PSIvlEXAQ45XaV_W8g&usqp=CAU
       name: food
       cSlug: s2
-      icon: fa-burger
       description: Cellulose ethers comprise methylcellulose
     - coverImage: https://is4-ssl.mzstatic.com/image/thumb/Purple115/v4/f2/29/cd/f229cd5e-c9be-048c-73fd-4af6a1b0dc33/source/256x256bb.jpg
       name: oil
       cSlug: s3
-      icon: fa-oil-well
       description: Cellulose ethers comprise methylcellulose,
     - coverImage: /media/scene1.jpg
       name: pill
       cSlug: s4
-      icon: fa-capsules
       description: Cellulose ethers comprise methylcellulose
 zh:
   title: <span>Solutions</span> by Industry

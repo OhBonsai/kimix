@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", init);
 
 let clientHeight = 0;
 let navEle = undefined;
-let themeEle = undefined;
 let sectionEle = undefined;
 
 // 屏幕高度
@@ -59,7 +58,6 @@ function initData() {
 function initNav() {
   const headerEle = document.querySelector(".header-bar");
   const navItems = document.querySelectorAll(".nav .item");
-  const themeEle = document.querySelector(".header-bar .theme");
   const langEle = document.querySelector(".header-bar .lang");
   const listItems = document.querySelectorAll(".nav .item ul li");
   const menuEle = document.querySelector(".header-bar .menu");
@@ -97,17 +95,6 @@ function initNav() {
         }
       };
     }
-  }
-
-  // 主题切换点击
-  if (themeEle) {
-    themeEle.onclick = function () {
-      const html = document.querySelector("html");
-      const htmlThemeClass = html.getAttribute("class");
-      // const val = htmlThemeClass === "light-mode" ? "" : "light-mode";
-      html.setAttribute("class", "light-mode");
-      // localStorage.setItem("theme", val);
-    };
   }
 
   // 语言切换点击
