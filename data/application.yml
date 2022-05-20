@@ -1,0 +1,50 @@
+en:
+  title: <span>Application</span> By Industry
+  backgroundTitle: Application By Industry
+  portText: "Here are our industry solutions that have helped many customers"
+  categories:
+    - coverImage: 1
+      name: Paints & Coating
+      cSlug: a1
+      description: 1
+    - coverImage: 2
+      name: Construction
+      cSlug: a2
+      description: 2
+    - coverImage: 3
+      name: Cosmetic & Detergent
+      cSlug: a3
+      description: 3
+    - coverImage: 4
+      name: Oil & Gas drilling
+      cSlug: a4
+      description: 4
+    - coverImage: 5
+      name: Food
+      cSlug: a5
+      description: 5
+zh:
+  title: <span>产品</span>应用
+  backgroundTitle: 产品应用
+  portText: "以下是我们帮助过许多客户的行业解决方案"
+  categories:
+    - coverImage: 1
+      name: 涂料
+      cSlug: a1
+      description: 1
+    - coverImage: 2
+      name: 建筑
+      cSlug: a2
+      description: 2
+    - coverImage: 3
+      name: 日化
+      cSlug: a3
+      description: 3
+    - coverImage: 4
+      name: 石油
+      cSlug: a4
+      description: 4
+    - coverImage: 5
+      name: 食品
+      cSlug: a5
+      description: 5

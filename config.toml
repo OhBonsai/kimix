@@ -20,7 +20,15 @@ contentDir = "content/chinese"
 weight = 2
 mark = "中"
 
+[Languages.sp]
+languageName = "Spanish"
+languageCode = "sp-sp"
+contentDir = "content/spanish"
+weight = 3
+mark = "SP"
+
 [taxonomies]
   category= "categories"
   scene = "scenes"
+  application = "applications"
 

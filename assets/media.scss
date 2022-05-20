@@ -45,6 +45,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         background-color: var(--color-white);
+        height: calc(100vh - 3.6rem);
 
         .item {
           color: var(--color-black);

@@ -75,26 +75,27 @@
         <div class="right-contact">
             <form action="" class="contact-form">
                 <div class="input-control i-c-2">
-                    <input type="text" required placeholder="YOUR NAME">
-                    <input type="email" required placeholder="YOUR EMAIL">
+                    <input type="text" required placeholder="{{$data.plName}}" id="concat-name">
+                    <input type="email" required placeholder="{{$data.plEmail}}" id="concat-email">
                 </div>
                 <div class="input-control">
-                    <input type="text" required placeholder="ENTER SUBJECT">
+                    <input type="tel" required placeholder="{{$data.plPhone}}" id="concat-phone">
                 </div>
                 <div class="input-control">
-                    <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                    <textarea name="" id="concat-content" cols="15" rows="8"
+                        placeholder="{{$data.plContent}}"></textarea>
                 </div>
                 <div class="btn-container-group">
-                    <div class="btn-container">
+                    <div class="btn-container" id="concat-submit">
                         <a>
-                            <span class="btn-text">submit</span>
+                            <span class="btn-text">{{$data.btnText}}</span>
                             <span class="btn-icon"><i class="fas fa-arrow-up-wide-short"></i></span>
                             <i class="bg"></i>
                         </a>
                     </div>
                     <div class="btn-container">
                         <a href="mailto:{{$data.email}}?subject=Let's talk some business&body=Hi, Kimix">
-                            <span class="btn-text">mail us directly</span>
+                            <span class="btn-text">{{$data.btnText2}}</span>
                             <span class="btn-icon"><i class="fas fa-arrows-down-to-people"></i></span>
                             <i class="bg"></i>
                         </a>

@@ -40,6 +40,7 @@ function init() {
   initData();
   initNav();
   initScroll();
+  initSubmit();
 }
 
 // 数据初始化
@@ -59,7 +60,6 @@ function initNav() {
   const headerEle = document.querySelector(".header-bar");
   const navItems = document.querySelectorAll(".nav .item");
   const langEle = document.querySelector(".header-bar .lang");
-  const listItems = document.querySelectorAll(".nav .item ul li");
   const menuEle = document.querySelector(".header-bar .menu");
 
   // 菜单点击
@@ -69,9 +69,7 @@ function initNav() {
         e.preventDefault();
         const target = e.target;
         const parentTarget = e.target.parentElement;
-        const id =
-          target.getAttribute("data-id") ||
-          parentTarget.getAttribute("data-id");
+        const id = target.getAttribute("data-id") || parentTarget.getAttribute("data-id");
 
         const nextDom = document.querySelector("#" + id);
         // 如果有目标元素才进行跳转
@@ -111,28 +109,11 @@ function initNav() {
     };
   }
 
-  // 子菜单点击
-  // if (listItems) {
-  // for (let item of listItems) {
-  // item.onclick = function (e) {
-  // e.stopPropagation();
-  // e.preventDefault()
-  // const target = e.target;
-  // alert("点击了子菜单" + target.innerHTML);
-  // };
-  // }
-  // }
-
   // 手机版的展开菜单点击
   if (menuEle) {
     menuEle.onclick = function () {
       const className = headerEle.getAttribute("class");
-      headerEle.setAttribute(
-        "class",
-        className === "header-bar open-menu"
-          ? "header-bar"
-          : "header-bar open-menu"
-      );
+      headerEle.setAttribute("class", className === "header-bar open-menu" ? "header-bar" : "header-bar open-menu");
     };
   }
 }
@@ -165,5 +146,43 @@ function initScroll() {
       const id = target.getAttribute("id");
       changeHash(id);
     }
+  };
+}
+
+// 初始化可点击提交
+function initSubmit() {
+  const submit = document.querySelector("#concat-submit");
+
+  submit.onclick = function () {
+    const name = document.querySelector("#concat-name");
+    const email = document.querySelector("#concat-email");
+    const phone = document.querySelector("#concat-phone");
+    const content = document.querySelector("#concat-content");
+    fetch("http://www.kimix.com.cn/send.asp", {
+      headers: {
+        accept:
+          "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "accept-language": "zh-CN,zh;q=0.9,ar;q=0.8,en-US;q=0.7,en;q=0.6",
+        "cache-control": "no-cache",
+        "content-type": "application/x-www-form-urlencoded",
+        pragma: "no-cache",
+        "upgrade-insecure-requests": "1",
+      },
+      referrer: "http://www.kimix.com.cn/contact.htm",
+      referrerPolicy: "strict-origin-when-cross-origin",
+      body:
+        "yourname=" +
+        name && name.value || '' +
+        "&email=" +
+        email && email.value || '' +
+        "&tel=" +
+        phone && phone.value || '' +
+        "&content=" +
+        content && content.value || '' +
+        "&Fjm1=6494&Fjm=6494&imageField.x=58&imageField.y=12",
+      method: "POST",
+      mode: "cors",
+      credentials: "include",
+    });
   };
 }
