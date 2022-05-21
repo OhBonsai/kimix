@@ -1,7 +1,7 @@
 <!--data-->
 
-
-{{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
+{{ $data := index site.Data.product site.Language.Lang }}
+{{ $categories := $data.categories}}
 {{ $existCategories :=  site.Taxonomies.categories }}
 {{ $cMapping := dict "" ""}}
 {{ range $categories }}
