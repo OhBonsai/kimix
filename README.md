@@ -31,3 +31,6 @@ Kimix Website,  Hugo + Netlify
     ├─files
     └─media
 ```
+
+
+
