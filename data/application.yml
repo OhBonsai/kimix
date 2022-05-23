@@ -6,19 +6,19 @@ en:
     - coverImage: 1
       name: Paints & Coating
       cSlug: a1
-      description: 1
+      description: 
     - coverImage: 2
       name: Construction
       cSlug: a2
-      description: 2
+      description: 
     - coverImage: 3
       name: Cosmetic & Detergent
       cSlug: a3
-      description: 3
+      description: 
     - coverImage: 4
       name: Oil & Gas drilling
       cSlug: a4
-      description: 4
+      description: 
     - coverImage: 5
       name: Food
       cSlug: a5
@@ -31,20 +31,20 @@ zh:
     - coverImage: 1
       name: 涂料
       cSlug: a1
-      description: 1
+      description: 
     - coverImage: 2
       name: 建筑
       cSlug: a2
-      description: 2
+      description: 
     - coverImage: 3
       name: 日化
       cSlug: a3
-      description: 3
+      description: 
     - coverImage: 4
       name: 石油
       cSlug: a4
-      description: 4
+      description: 
     - coverImage: 5
       name: 食品
       cSlug: a5
-      description: 5
+      description: 

@@ -6,23 +6,23 @@ en:
     - coverImage: /media/category1.jpg
       cSlug: c1
       name: Cellulose ethers
-      description: 1
+      description: 
     - coverImage: /media/category2.jpg
       cSlug: c2
       name: Iron oxide pigment
-      description: 2
+      description: 
     - coverImage: /media/category3.jpg
       cSlug: c3
       name: Titanium dioxide
-      description: 3
+      description: 
     - coverImage: /media/category4.jpg
       cSlug: c4
       name: Re-dispersible polymer powder
-      description: 4
+      description: 
     - coverImage: /media/category5.jpg
       cSlug: c5
       name: Other paints & construction additives
-      description: 5
+      description: 
   btnText: View More
 zh:
   title: 产品 <span>介绍</span>
@@ -32,21 +32,21 @@ zh:
     - coverImage: /media/category1.jpg
       cSlug: c1
       name: 纤维素醚
-      description: 1
+      description: 
     - coverImage: /media/category2.jpg
       cSlug: c2
       name: 氧化铁颜料
-      description: 2
+      description: 
     - coverImage: /media/category3.jpg
       cSlug: c3
       name: 钛白粉
-      description: 3
+      description: 
     - coverImage: /media/category4.jpg
       cSlug: c4
       name: 可分散乳胶粉
-      description: 4
+      description: 
     - coverImage: /media/category5.jpg
       cSlug: c5
       name: 其他建筑 & 涂料添加剂
-      description: 5
+      description: 
   btnText: 查看更多
