@@ -13,8 +13,15 @@
         {{ $data.portText }}
     </p>
 
-
     <div class="categories">
+
+        {{ range first 999 (where site.RegularPages "Type" "==" "products")}}
+
+        <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
+            {{.Params}}
+        </div>
+
+        {{ end }}
 
         {{range $data.categories}}
         <div class="category">

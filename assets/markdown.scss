@@ -30,7 +30,7 @@
   }
 
   pre {
-    background-color: var(--color-white);
+    background-color: var(--color-grey-4);
     border-radius: 3px;
     word-wrap: break-word;
     padding: 12px 13px;
@@ -85,15 +85,15 @@
     height: 4px;
     padding: 0;
     margin: 16px 0;
-    background-color: var(--color-white);
+    background-color: var(--color-grey-4);
     border: 0 none;
     overflow: hidden;
     box-sizing: content-box;
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--color-grey-4);
   }
 
   pre {
-    background: var(--color-white) !important;
+    background: var(--color-grey-4) !important;
     padding: 12px 13px;
   }
 
@@ -103,6 +103,6 @@
     color: var(--color-secondary);
     border-radius: 2px;
     white-space: inherit;
-    background-color: var(--color-white);
+    background-color: var(--color-grey-4);
   }
 }
