@@ -18,7 +18,7 @@
   transition: all 0.2s ease-in-out;
 
   &.scroll {
-    background-color: var(--color-extra);
+    background-color: var(--color-secondary);
 
     .nav {
       .item {
@@ -211,14 +211,14 @@
 
     .h-shape {
       transition: all 0.4s ease-in-out;
-      width: 65%;
+      width: 100%;
       height: 100%;
       background-color: var(--color-secondary);
       position: absolute;
       left: 0;
       top: 0;
       z-index: -1;
-      clip-path: polygon(0 0, 56% 0, 90% 100%, 0% 100%);
+      clip-path: polygon(0 0, 56% 0, 100% 100%, 0% 100%);
     }
 
     .image {
@@ -403,18 +403,18 @@
   }
 }
 
-// solution
+// application
 .sec4 {
   .scenes-box {
     width: 80%;
     margin: 2rem auto 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 2rem;
     position: relative;
 
     .item {
-      height: 20rem;
+      height: 16rem;
       position: relative;
       border-radius: 10px;
       cursor: pointer;

@@ -10,7 +10,7 @@ en:
       title: We provide multi-directional solutions
       content: 
     - icon: fa-bullseye
-      title: Our net work
+      title: Our sales network
       content: 
 zh:
   title: 关于 <span>我们</span>
@@ -18,11 +18,11 @@ zh:
   portText: 凯美斯化工有限公司是一家专业的化工原料和产品供应商，致力于向客户提供优质的产品和服务，为客户创造长期的价值
   items:
     - icon: fa-business-time
-      title: We supply high quality chemicals
+      title: 我们供应高质量的化学品
       content: 
     - icon: fa-calculator
-      title: We provide multi-directional solutions
+      title: 我们提供多方位的解决方案
       content: 
     - icon: fa-bullseye
-      title: Our net work
+      title: 我们拥有庞大的销售网络
       content: 
