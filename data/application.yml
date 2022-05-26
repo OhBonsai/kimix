@@ -3,48 +3,48 @@ en:
   backgroundTitle: Application By Industry
   portText: "Here are our industry solutions that have helped many customers"
   categories:
-    - coverImage: 1
+    - coverImage: /media/app1.jpg
       name: Paints & Coating
       cSlug: a1
       description: 
-    - coverImage: 2
+    - coverImage: /media/app2.jpg
       name: Construction
       cSlug: a2
       description: 
-    - coverImage: 3
+    - coverImage: /media/app3.jpg
       name: Cosmetic & Detergent
       cSlug: a3
       description: 
-    - coverImage: 4
+    - coverImage: /media/app4.jpg
       name: Oil & Gas drilling
       cSlug: a4
       description: 
-    - coverImage: 5
+    - coverImage: /media/app5.jpg
       name: Food
       cSlug: a5
-      description: 5
+      description: 
 zh:
   title: <span>产品</span>应用
   backgroundTitle: 产品应用
   portText: "以下是我们帮助过许多客户的行业解决方案"
   categories:
-    - coverImage: 1
+    - coverImage: /media/app1.jpg
       name: 涂料
       cSlug: a1
       description: 
-    - coverImage: 2
+    - coverImage: /media/app2.jpg
       name: 建筑
       cSlug: a2
       description: 
-    - coverImage: 3
+    - coverImage: /media/app3.jpg
       name: 日化
       cSlug: a3
       description: 
-    - coverImage: 4
+    - coverImage: /media/app4.jpg
       name: 石油
       cSlug: a4
       description: 
-    - coverImage: 5
+    - coverImage: /media/app5.jpg
       name: 食品
       cSlug: a5
       description: 

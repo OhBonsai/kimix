@@ -23,6 +23,9 @@
     .nav {
       .item {
         color: var(--color-primary);
+        &:hover {
+          color: var(--color-grey0);
+        }
       }
     }
 
@@ -30,8 +33,8 @@
     .menu {
       box-shadow: none;
       &:hover {
-        color: var(--color-grey-4);
-        background-color: var(--color-secondary);
+        // color: var(--color-grey-4);
+        // background-color: var(--color-grey0);
       }
     }
   }
@@ -178,11 +181,15 @@
 }
 .white-header {
   .header-bar {
-    background-color: var(--color-grey-4);
+    background-color: var(--color-secondary);
+    position: static;
 
     .nav {
       .item {
         color: var(--color-primary);
+        &:hover {
+          color: var(--color-grey0);
+        }
       }
     }
 
@@ -190,8 +197,8 @@
     .menu {
       box-shadow: none;
       &:hover {
-        color: var(--color-grey-4);
-        background-color: var(--color-secondary);
+        // color: var(--color-grey-4);
+        // background-color: var(--color-grey0);
       }
     }
   }
@@ -206,7 +213,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 50%;
+    width: 55%;
     flex-shrink: 0;
 
     .h-shape {
@@ -218,13 +225,61 @@
       left: 0;
       top: 0;
       z-index: -1;
-      clip-path: polygon(0 0, 56% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+      background-size: cover;
     }
 
-    .image {
-      width: 68%;
-      height: auto;
-      transition: all 0.2s ease-in-out;
+    .s1 {
+      animation: loop1 10s infinite;
+    }
+
+    .s2 {
+      animation: loop2 10s infinite;
+    }
+
+    @keyframes shapeStart {
+      0% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+      }
+      100% {
+        clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    @keyframes loop1 {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+      60% {
+        opacity: 0;
+      }
+      90% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes loop2 {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
   }
 
@@ -354,7 +409,7 @@
         text-align: center;
 
         h3 {
-          padding: 1rem 0;
+          padding: 1rem 0.5rem;
         }
       }
 
@@ -409,7 +464,7 @@
     width: 80%;
     margin: 2rem auto 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     position: relative;
 
@@ -426,6 +481,7 @@
         .img {
           transform: scale(1.1);
           box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+          background-color: var(--color-white);
         }
 
         .text {

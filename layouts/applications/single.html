@@ -1,5 +1,7 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
 
 <!-- head link and script -->
 {{ partial "head.html" .}}
@@ -7,11 +9,8 @@
 {{ $productStyle := resources.Get "product.scss" | resources.ToCSS | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
 
-{{ $productStyle := resources.Get "markdown.scss" | resources.ToCSS | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
-
-{{ $productJs := resources.Get "product.js" }}
-<script src="{{$productJs.RelPermalink}}"></script>
+{{ $markdownStyle := resources.Get "markdown.scss" | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $markdownStyle.RelPermalink }}" integrity="{{ $markdownStyle.Data.Integrity }}" />
 
 <body>
     <!-- navigation header -->
@@ -29,26 +28,26 @@
         <div class="container">
             <div class="side-menu">
                 <div class="title">
-
+                   
                 </div>
 
                 <ul class="list">
-
-                    <li>
+                    
+                    <li onclick="location.href = '{{.RelPermalink}}'">
                         <div>
                             <span></span>
                         </div>
                     </li>
-
+                   
                 </ul>
             </div>
 
             <div class="main">
                 <div class="title">
-
+                    
                 </div>
                 <div class="md-content">
-
+                   
                 </div>
             </div>
         </div>

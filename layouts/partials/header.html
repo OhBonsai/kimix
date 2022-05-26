@@ -15,16 +15,16 @@
                 <span>{{$glossary.product}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    {{range $product.categories}}
-                    <li onclick="handleHeaderSubMenuClick(event, '')">
+                    {{range $index, $item := $product.categories}}
+                    <li onclick="handleHeaderSubMenuClick(event, '/products/{{add $index 1}}')">
                         {{ .name }}
                     </li>
                     {{ end }}
                 </ul>
             </a>
 
-            <a class="item" href="/#solution" data-id="solution">
-                <span>{{$glossary.solution}}</span>
+            <a class="item" href="/#application" data-id="application">
+                <span>{{$glossary.application}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
                     {{range $application.categories}}

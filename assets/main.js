@@ -122,13 +122,15 @@ function initNav() {
 function initScroll() {
   let timer;
   window.onscroll = function (e) {
-    if (timer) {
-      return;
-    } else {
-      timer = setTimeout(() => {
-        clearTimeout(timer);
-        timer = undefined;
-      }, 300);
+    if (document.scrollingElement.scrollTop > 0) {
+      if (timer) {
+        return;
+      } else {
+        timer = setTimeout(() => {
+          clearTimeout(timer);
+          timer = undefined;
+        }, 500);
+      }
     }
     if (document.scrollingElement.scrollTop >= clientHeight) {
       navEle.setAttribute("class", "header-bar scroll");
@@ -153,36 +155,34 @@ function initScroll() {
 function initSubmit() {
   const submit = document.querySelector("#concat-submit");
 
-  submit.onclick = function () {
-    const name = document.querySelector("#concat-name");
-    const email = document.querySelector("#concat-email");
-    const phone = document.querySelector("#concat-phone");
-    const content = document.querySelector("#concat-content");
-    fetch("http://www.kimix.com.cn/send.asp", {
-      headers: {
-        accept:
-          "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-        "accept-language": "zh-CN,zh;q=0.9,ar;q=0.8,en-US;q=0.7,en;q=0.6",
-        "cache-control": "no-cache",
-        "content-type": "application/x-www-form-urlencoded",
-        pragma: "no-cache",
-        "upgrade-insecure-requests": "1",
-      },
-      referrer: "http://www.kimix.com.cn/contact.htm",
-      referrerPolicy: "strict-origin-when-cross-origin",
-      body:
-        "yourname=" +
-        name && name.value || '' +
-        "&email=" +
-        email && email.value || '' +
-        "&tel=" +
-        phone && phone.value || '' +
-        "&content=" +
-        content && content.value || '' +
-        "&Fjm1=6494&Fjm=6494&imageField.x=58&imageField.y=12",
-      method: "POST",
-      mode: "cors",
-      credentials: "include",
-    });
-  };
+  if (submit) {
+    submit.onclick = function () {
+      const name = document.querySelector("#concat-name");
+      const email = document.querySelector("#concat-email");
+      const phone = document.querySelector("#concat-phone");
+      const content = document.querySelector("#concat-content");
+      fetch("http://www.kimix.com.cn/send.asp", {
+        headers: {
+          accept:
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+          "accept-language": "zh-CN,zh;q=0.9,ar;q=0.8,en-US;q=0.7,en;q=0.6",
+          "cache-control": "no-cache",
+          "content-type": "application/x-www-form-urlencoded",
+          pragma: "no-cache",
+          "upgrade-insecure-requests": "1",
+        },
+        referrer: "http://www.kimix.com.cn/contact.htm",
+        referrerPolicy: "strict-origin-when-cross-origin",
+        body:
+          ("yourname=" + name && name.value) ||
+          ("" + "&email=" + email && email.value) ||
+          ("" + "&tel=" + phone && phone.value) ||
+          ("" + "&content=" + content && content.value) ||
+          "" + "&Fjm1=6494&Fjm=6494&imageField.x=58&imageField.y=12",
+        method: "POST",
+        mode: "cors",
+        credentials: "include",
+      });
+    };
+  }
 }
