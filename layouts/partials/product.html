@@ -14,13 +14,13 @@
     </p>
 
     <div class="categories">
-        {{range $data.categories}}
+        {{range $index, $item :=  $data.categories}}
         <div class="category">
-            <div class="image"><img src="{{.coverImage}}" alt="">
-                <h3>{{.name}}</h3>
+            <div class="image"><img src="{{$item.coverImage}}" alt="">
+                <h3>{{$item.name}}</h3>
             </div>
             <div class="hover-items">
-                <div class="show-more" onclick="handleHeaderSubMenuClick(event, '')">
+                <div class="show-more" onclick="location.href='/products/{{add $index 1}}'">
                     {{$data.btnText}}
                 </div>
                 <!-- <p>{{.description}}</p> -->

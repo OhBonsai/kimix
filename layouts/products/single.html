@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
 
 <!-- head link and script -->
 {{ partial "head.html" .}}
