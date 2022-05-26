@@ -182,6 +182,7 @@
 .white-header {
   .header-bar {
     background-color: var(--color-secondary);
+    position: static;
 
     .nav {
       .item {
@@ -224,9 +225,61 @@
       left: 0;
       top: 0;
       z-index: -1;
-      clip-path: polygon(0 0, 56% 0, 100% 100%, 0% 100%);
-      background-image: url("/media/main01.jpeg");
+      clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
       background-size: cover;
+    }
+
+    .s1 {
+      animation: loop1 10s infinite;
+    }
+
+    .s2 {
+      animation: loop2 10s infinite;
+    }
+
+    @keyframes shapeStart {
+      0% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+      }
+      100% {
+        clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    @keyframes loop1 {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+      60% {
+        opacity: 0;
+      }
+      90% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes loop2 {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
   }
 
