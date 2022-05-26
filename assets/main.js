@@ -122,13 +122,15 @@ function initNav() {
 function initScroll() {
   let timer;
   window.onscroll = function (e) {
-    if (timer) {
-      return;
-    } else {
-      timer = setTimeout(() => {
-        clearTimeout(timer);
-        timer = undefined;
-      }, 300);
+    if (document.scrollingElement.scrollTop >0) {
+      if (timer) {
+        return;
+      } else {
+        timer = setTimeout(() => {
+          clearTimeout(timer);
+          timer = undefined;
+        }, 500);
+      }
     }
     if (document.scrollingElement.scrollTop >= clientHeight) {
       navEle.setAttribute("class", "header-bar scroll");
@@ -171,15 +173,11 @@ function initSubmit() {
       referrer: "http://www.kimix.com.cn/contact.htm",
       referrerPolicy: "strict-origin-when-cross-origin",
       body:
-        "yourname=" +
-        name && name.value || '' +
-        "&email=" +
-        email && email.value || '' +
-        "&tel=" +
-        phone && phone.value || '' +
-        "&content=" +
-        content && content.value || '' +
-        "&Fjm1=6494&Fjm=6494&imageField.x=58&imageField.y=12",
+        ("yourname=" + name && name.value) ||
+        ("" + "&email=" + email && email.value) ||
+        ("" + "&tel=" + phone && phone.value) ||
+        ("" + "&content=" + content && content.value) ||
+        "" + "&Fjm1=6494&Fjm=6494&imageField.x=58&imageField.y=12",
       method: "POST",
       mode: "cors",
       credentials: "include",

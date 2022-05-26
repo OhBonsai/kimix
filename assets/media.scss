@@ -88,9 +88,7 @@
         width: 100%;
         .h-shape {
           clip-path: polygon(0 0, 10% 0, 60% 100%, 0% 100%);
-        }
-        .image {
-          display: none;
+          background-image: none !important;
         }
       }
 
