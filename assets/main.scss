@@ -30,7 +30,7 @@
     .menu {
       box-shadow: none;
       &:hover {
-        color: var(--color-white);
+        color: var(--color-grey-4);
         background-color: var(--color-secondary);
       }
     }
@@ -55,7 +55,7 @@
     .item {
       font-size: 1.2rem;
       font-weight: 700;
-      color: var(--color-white);
+      color: var(--color-grey-4);
       margin: 0 1rem;
       cursor: pointer;
       position: relative;
@@ -72,7 +72,7 @@
         position: absolute;
         top: 1.9rem;
         left: 0;
-        background-color: var(--color-white);
+        background-color: var(--color-grey-4);
         color: var(--color-primary);
         z-index: 2;
         padding: 3px 0;
@@ -98,7 +98,7 @@
             position: absolute;
             top: 0;
             left: 100%;
-            background-color: var(--color-white);
+            background-color: var(--color-grey-4);
             color: var(--color-primary);
             z-index: 2;
             padding: 3px 0;
@@ -111,7 +111,7 @@
 
           &:hover {
             background-color: var(--color-secondary);
-            color: var(--color-white);
+            color: var(--color-grey-4);
 
             & > ul {
               display: block;
@@ -163,7 +163,7 @@
     line-height: 1.8rem;
     border-radius: 2rem;
     padding: 0 10px;
-    background-color: var(--color-white);
+    background-color: var(--color-grey-4);
     color: var(--color-primary);
     font-size: 0.8rem;
     &:hover {
@@ -178,7 +178,7 @@
 }
 .white-header {
   .header-bar {
-    background-color: var(--color-white);
+    background-color: var(--color-grey-4);
 
     .nav {
       .item {
@@ -190,7 +190,7 @@
     .menu {
       box-shadow: none;
       &:hover {
-        color: var(--color-white);
+        color: var(--color-grey-4);
         background-color: var(--color-secondary);
       }
     }
@@ -383,7 +383,7 @@
 
         p {
           text-align: center;
-          color: var(--color-white);
+          color: var(--color-grey-4);
           padding: 2rem 1rem 1rem;
         }
 
@@ -570,7 +570,7 @@
         a {
           display: flex;
           align-items: center;
-          color: var(--color-white);
+          color: var(--color-grey-4);
           background-color: var(--color-grey-5);
           cursor: pointer;
           justify-content: center;
@@ -612,7 +612,7 @@
           border: none;
           background-color: var(--color-grey-5);
           width: 100%;
-          color: var(--color-white);
+          color: var(--color-grey-4);
           resize: none;
         }
       }
@@ -629,7 +629,7 @@
 
 // footer
 .footer {
-  color: var(--color-white);
+  color: var(--color-grey-4);
   padding: 2rem;
   text-align: center;
 
@@ -642,5 +642,3 @@
     text-decoration: underline;
   }
 }
-
-// add by penzai

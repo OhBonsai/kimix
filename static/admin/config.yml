@@ -51,17 +51,11 @@ collections:
     fields:
       [
         { label: "Title", name: "title", widget: "string"},
-        { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
-          { label: "纤维素醚", value: "c1" },
-          { label: "钛白粉", value: "c2" },
-          { label: "氧化铁颜料", value: "c3" },
-          { label: "可再分散乳胶粉", value: "c4" },
-          { label: "其他建筑、涂料助剂", value: "c5" },
-        ]},
         { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
         { label: "Summary", name: "summary", widget: "text" },
         { label: "Body", name: "body", widget: "markdown" },
       ]
+    collections:
   - name: "products-zh"
     label: "Products-中文"
     folder: "content/chinese/products"
@@ -70,10 +64,42 @@ collections:
     fields:
       [
         { label: "Title", name: "title", widget: "string"},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
+  - name: "sub-products"
+    label: "Sub-Products-EN"
+    folder: "content/english/sub-products"
+    path: "{{slug}}"
+    create: true
+    fields:
+      [
+        { label: "Title", name: "title", widget: "string"},
+        { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
+          { label: "Cellulose ethers", value: "c1" },
+          { label: "Iron oxide pigment", value: "c2" },
+          { label: "Titanium dioxide", value: "c3" },
+          { label: "Re-dispersible polymer powder", value: "c4" },
+          { label: "Other paints & construction additives", value: "c5" },
+        ]},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
+    collections:
+  - name: "sub-products-zh"
+    label: "Sub-Products-中文"
+    folder: "content/chinese/sub-products"
+    path: "{{slug}}"
+    create: true
+    fields:
+      [
+        { label: "Title", name: "title", widget: "string"},
         { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
           { label: "纤维素醚", value: "c1" },
-          { label: "钛白粉", value: "c2" },
-          { label: "氧化铁颜料", value: "c3" },
+          { label: "氧化铁颜料", value: "c2" },
+          { label: "钛白粉", value: "c3" },
           { label: "可再分散乳胶粉", value: "c4" },
           { label: "其他建筑、涂料助剂", value: "c5" },
         ]},

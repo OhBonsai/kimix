@@ -5,7 +5,7 @@
   --color-secondary: #cd8329;  // KIMIX LOGO Ki的颜色, 用于文字的强调
   --color-third: #3c3131;      // KIMIX Mix颜色，用于普通标题
   --color-extra: #3DCC8A;      // color wheel triad模式下， 找到一个颜色
-  --color-white: #454e56;
+  --color-white: #fff;
   --color-black: #000;
   --color-grey0: #3c3131;
   --color-grey-1: #6c7983;
@@ -36,7 +36,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga", "kern";
   font-size: 16px;
-  color: var(--color-white);
+  color: var(--color-grey-4);
   background-color: var(--color-primary);
   transition: all 0.2s ease-in-out;
 }
