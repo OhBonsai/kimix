@@ -126,14 +126,21 @@
     .sec3 {
       .categories {
         width: 100%;
-        grid-template-columns: repeat(1, 1fr);
+        // grid-template-columns: repeat(1, 1fr);
+
+        .category {
+          width: 100%;
+        }
       }
     }
 
     .sec4 {
       .scenes-box {
         width: 100%;
-        grid-template-columns: repeat(1, 1fr);
+        // grid-template-columns: repeat(1, 1fr);
+        .item {
+          width: 100%;
+        }
       }
     }
 
