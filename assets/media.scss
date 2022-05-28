@@ -89,6 +89,10 @@
         .h-shape {
           clip-path: polygon(0 0, 10% 0, 60% 100%, 0% 100%);
           background-image: none !important;
+          animation: none;
+        }
+        &::before {
+          display: none;
         }
       }
 
@@ -105,14 +109,25 @@
 
         .name {
           font-size: 2.4rem;
-        }
+          color: var(--color-grey-4);
 
-        .btn-container {
-          a {
-            margin: 0 auto;
-            background-color: var(--color-primary);
+          span {
+            color: var(--color-secondary);
+            display: block;
           }
         }
+
+        p {
+          color: var(--color-grey-4);
+          width: 100%;
+        }
+
+        // .btn-container {
+        //   a {
+        //     margin: 0 auto;
+        //     background-color: var(--color-primary);
+        //   }
+        // }
       }
     }
 
