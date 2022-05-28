@@ -17,7 +17,7 @@
   z-index: 100;
   transition: all 0.2s ease-in-out;
   background-color: var(--color-white);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
 
   &.scroll {
     background-color: var(--color-secondary);
@@ -238,7 +238,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.11);
+      background-color: rgba(0, 0, 0, 0.3);
       z-index: 1;
     }
 
@@ -300,10 +300,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 15rem;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
     .name {
-      font-size: 3.6rem;
+      font-size: 4rem;
+      color: var(--color-white);
       span {
         color: var(--color-secondary);
         display: block;
@@ -315,7 +322,9 @@
       font-size: 1.4rem;
       white-space: pre-wrap;
       word-wrap: break-word;
-      margin-top: 1.5rem;
+      margin: 1.5rem auto 0;
+      color: var(--color-white);
+      width: 50%;
     }
   }
 }
