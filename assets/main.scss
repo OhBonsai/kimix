@@ -16,6 +16,8 @@
   box-sizing: border-box;
   z-index: 100;
   transition: all 0.2s ease-in-out;
+  background-color: var(--color-white);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
 
   &.scroll {
     background-color: var(--color-secondary);
@@ -29,14 +31,14 @@
       }
     }
 
-    .lang,
-    .menu {
-      box-shadow: none;
-      &:hover {
-        // color: var(--color-grey-4);
-        // background-color: var(--color-grey0);
-      }
-    }
+    // .lang,
+    // .menu {
+    // box-shadow: none;
+    // &:hover {
+    // color: var(--color-grey-4);
+    // background-color: var(--color-grey0);
+    // }
+    // }
   }
 
   .logo {
@@ -213,7 +215,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 55%;
+    width: 100%;
     flex-shrink: 0;
 
     .h-shape {
@@ -225,8 +227,19 @@
       left: 0;
       top: 0;
       z-index: -1;
-      clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+      // clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
       background-size: cover;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.11);
+      z-index: 1;
     }
 
     .s1 {
@@ -388,9 +401,11 @@
 // product
 .sec3 {
   .categories {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 2rem;
     margin: 2rem auto 0;
     width: 80%;
 
@@ -399,6 +414,9 @@
       border-radius: 10px;
       overflow: hidden;
       border: 2px solid var(--color-secondary);
+      width: 30%;
+      margin: 0 1.5% 5%;
+      box-sizing: border-box;
 
       &:hover .hover-items {
         opacity: 1;
@@ -415,7 +433,7 @@
 
       img {
         width: 100%;
-        height: 300px;
+        height: 260px;
         object-fit: cover;
         border-radius: inherit;
       }
@@ -463,9 +481,11 @@
   .scenes-box {
     width: 80%;
     margin: 2rem auto 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 2rem;
     position: relative;
 
     .item {
@@ -475,6 +495,8 @@
       cursor: pointer;
       border: 2px solid var(--color-secondary);
       box-sizing: border-box;
+      width: 30%;
+      margin: 0 1.5% 5%;
 
       &:hover {
         box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
