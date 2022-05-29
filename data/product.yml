@@ -4,23 +4,23 @@ en:
   portText: Kimix provides our customers high quality materials
   categories:
     - coverImage: /media/category1.jpg
-      cSlug: c1
+      cSlug: p1
       name: Cellulose ethers
       description: 
     - coverImage: /media/category2.jpg
-      cSlug: c2
+      cSlug: p2
       name: Iron oxide pigment
       description: 
     - coverImage: /media/category3.jpg
-      cSlug: c3
+      cSlug: p3
       name: Titanium dioxide
       description: 
     - coverImage: /media/category4.jpg
-      cSlug: c4
+      cSlug: p4
       name: Re-dispersible polymer powder
       description: 
     - coverImage: /media/category5.jpg
-      cSlug: c5
+      cSlug: p5
       name: Other paints & construction additives
       description: 
   btnText: View More
@@ -30,23 +30,23 @@ zh:
   portText: Kimix为客户提供高品质的材料
   categories:
     - coverImage: /media/category1.jpg
-      cSlug: c1
+      cSlug: p1
       name: 纤维素醚
       description: 
     - coverImage: /media/category2.jpg
-      cSlug: c2
+      cSlug: p2
       name: 氧化铁颜料
       description: 
     - coverImage: /media/category3.jpg
-      cSlug: c3
+      cSlug: p3
       name: 钛白粉
       description: 
     - coverImage: /media/category4.jpg
-      cSlug: c4
+      cSlug: p4
       name: 可分散乳胶粉
       description: 
     - coverImage: /media/category5.jpg
-      cSlug: c5
+      cSlug: p5
       name: 其他建筑 & 涂料添加剂
       description: 
   btnText: 查看更多

@@ -86,6 +86,7 @@ collections:
         { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
         { label: "Summary", name: "summary", widget: "text" },
         { label: "Body", name: "body", widget: "markdown" },
+        { label: "Lang", name: "lang", widget: "string"},
       ]
     collections:
   - name: "sub-products-zh"
@@ -106,4 +107,5 @@ collections:
         { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
         { label: "Summary", name: "summary", widget: "text" },
         { label: "Body", name: "body", widget: "markdown" },
+        { label: "Lang", name: "lang", widget: "string"},
       ]
