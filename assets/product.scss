@@ -1,8 +1,7 @@
 .product-page {
-
   // 顶部头图
   .banner {
-    height: 20rem;
+    height: 30rem;
     position: relative;
     img {
       display: block;
@@ -119,6 +118,22 @@
 
         p {
           line-height: inherit;
+        }
+      }
+
+      .md-content {
+        table {
+          width: 100%;
+          th {
+            background-color: #cd8329;
+            color: #fff;
+            font-weight: bold;
+          }
+          th,
+          td {
+            border: 1px solid #f2a340;
+            padding: 8px;
+          }
         }
       }
     }

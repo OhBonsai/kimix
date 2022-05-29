@@ -1,4 +1,16 @@
+{{ $data := index site.Data.product site.Language.Lang }}
+{{ $categories := $data.categories}}
+{{ $existCategories := site.Taxonomies.categories }}
+{{ $cMapping := dict "" ""}}
+{{ range $categories }}
+{{ $cMapping = merge $cMapping (dict .cSlug .)}}
+{{ end}}
 
+
+{{ $curCategorySlug := index .Params.categories 0}}
+{{ $curCategoryCfg := index $cMapping $curCategorySlug}}
+{{ $curCategoryVar := index site.Taxonomies.categories $curCategorySlug}}
+{{ $application := index site.Data.application site.Language.Lang }}
 
 <!DOCTYPE html>
 <html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
@@ -18,36 +30,34 @@
         {{ partial "header.html" .}}
     </div>
 
-
     <div class="product-page">
         <div class="banner">
-            <img src="">
-            <h1></h1>
+            <img src="/media/{{ path.Base .Params.image }}">
         </div>
 
         <div class="container">
             <div class="side-menu">
                 <div class="title">
-                   
+                    Applications
                 </div>
 
                 <ul class="list">
-                    
-                    <li onclick="location.href = '{{.RelPermalink}}'">
+                    {{range $index, $item := $application.categories}}
+                    <li onclick="location.href = '/applications/{{add $index 1}}'">
                         <div>
-                            <span></span>
+                            <span>{{ .name }}</span>
                         </div>
                     </li>
-                   
+                    {{ end }}
                 </ul>
             </div>
 
             <div class="main">
                 <div class="title">
-                    
+                    {{ .Title }}
                 </div>
                 <div class="md-content">
-                   
+                    {{ .Content }}
                 </div>
             </div>
         </div>
