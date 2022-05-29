@@ -27,8 +27,8 @@
                 <span>{{$glossary.application}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    {{range $application.categories}}
-                    <li onclick="handleHeaderSubMenuClick(event, '')">
+                    {{range $index, $item := $application.categories}}
+                    <li onclick="handleHeaderSubMenuClick(event, '/applications/{{add $index 1}}')">
                         {{ .name }}
                     </li>
                     {{ end }}
