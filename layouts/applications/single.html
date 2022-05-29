@@ -1,15 +1,3 @@
-{{ $data := index site.Data.product site.Language.Lang }}
-{{ $categories := $data.categories}}
-{{ $existCategories := site.Taxonomies.categories }}
-{{ $cMapping := dict "" ""}}
-{{ range $categories }}
-{{ $cMapping = merge $cMapping (dict .cSlug .)}}
-{{ end}}
-
-
-{{ $curCategorySlug := index .Params.categories 0}}
-{{ $curCategoryCfg := index $cMapping $curCategorySlug}}
-{{ $curCategoryVar := index site.Taxonomies.categories $curCategorySlug}}
 {{ $application := index site.Data.application site.Language.Lang }}
 
 <!DOCTYPE html>
