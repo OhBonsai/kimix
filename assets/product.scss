@@ -35,10 +35,14 @@
       flex-shrink: 0;
 
       & > .title {
-        font-size: 1.6rem;
+        font-size: 1rem;
+        min-height: 2rem;
+        line-height: 1.5;
         padding-bottom: 0.5rem;
         border-bottom: 1px solid var(--color-secondary);
         margin-bottom: 6px;
+        font-weight: bold;
+        vertical-align: middle;
       }
 
       .list {
@@ -107,8 +111,11 @@
 
       & > .title {
         font-size: 1.6rem;
+        min-height: 2rem;
+        line-height: 2rem;
         padding-bottom: 0.5rem;
         border-bottom: 1px solid var(--color-secondary);
+        font-weight: bold;
       }
 
       & > .content {

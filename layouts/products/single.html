@@ -33,15 +33,25 @@
         <div class="banner">
             <img src="/media/{{ path.Base .Params.image }}">
         </div>
+        
+        {{.Params}}
+        <hr>
+        {{$curCategorySlug}}
+        <hr>
+        {{$existCategories}}
+        <hr>
+        {{.Params.categories}}
+        <hr>
+
 
         <div class="container">
             <div class="side-menu">
                 <div class="title">
-                    
+                    {{.Title}} Product List
                 </div>
 
                 <ul class="list">
-
+                    
                     <li onclick="location.href = '{{.RelPermalink}}'">
                         <div>
                             <span></span>
