@@ -1,4 +1,5 @@
 {{ $curCategorySlug := index .Params.categories 0}}
+{{ $curParentCategorySlug := index .Params.categories 1}}
 {{ $existCategories := site.Taxonomies.categories }}
 
 <!DOCTYPE html>
@@ -23,17 +24,15 @@
         <div class="banner">
             <img src="/media/{{ path.Base .Params.image }}">
         </div>
-
         <div class="container">
             <div class="side-menu">
                 <div class="title">
                     Product List
                 </div>
 
-
-                <ul class="list" id="product-menu-list">
+                <ul class="list">
                     {{range $name,$item := $existCategories}}
-                    {{if (eq $name $curCategorySlug )}}
+                    {{if (eq $name $curParentCategorySlug )}}
                     {{range $page := $item.Pages}}
                     <li onclick="location.href = '{{.RelPermalink}}'">
                         <div><span>{{$page.Title}}</span></div>

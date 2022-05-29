@@ -41,6 +41,7 @@ function init() {
   initNav();
   initScroll();
   initSubmit();
+  initProduct();
 }
 
 // 数据初始化
@@ -185,4 +186,8 @@ function initSubmit() {
       });
     };
   }
+}
+
+function initProduct() {
+  const menuList = document.querySelector("#product-menu-list");
 }
